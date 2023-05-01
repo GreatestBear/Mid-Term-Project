@@ -2,6 +2,11 @@ html{
   background-color: #C28F50;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+}
+
 .header{
   height: 150px;
   background-color: #323E35;
@@ -9,6 +14,7 @@ html{
 }
 
 .footer{
+  display: block;
   height: 50px;
   background-color: #323E35;
   width:100%;
@@ -49,9 +55,24 @@ html{
   background-color: #323E35;
 }
 
+.article2{
+  display: inline-block;
+  background-color: #323E35;
+}
+
 .main{
+  flex: 1 auto;
   display:flex;
   flex-direction: row;
   width: 100%;
   height: 780px;
+}
+
+img{
+  margin: 10px;
+}
+
+p{
+  font-size: 20px;
+  font-weight: 300;
 }
