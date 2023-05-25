@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>GreatestBear</title>
+    <script src="./PDFObject-master/PDFObject-master/pdfobject.js"></script>
+    <script src="./PDFObject-master/PDFObject-master/pdfobject.min.js"></script>
   </head>
   <body>
     <div class="header"><h1 style="text-align:center; line-height: 130px;"><a href="./index.html" style="text-decoration:none; color:black;">GreatestBear</a></h1></div>
@@ -25,32 +27,8 @@
       <div class="right">
         <div class="nav"><h3 style="text-align:left; line-height: 10px; display:inline-block;">&nbsp;■■ : </h2>&nbsp;■■</div>
         <div class="section">
-          <div class="article">
-            
-            <article>
-              Chapter1 에서 했던 Protocol의 계층화 모델을 자세히 살펴보면,<br>
-              <img src="./2-1.png" style="weight:300px; height: 300px;"><br>
-              처럼 구조를 이루고 있다. <br>
-              Socket program의 구조를 살펴보자<br>
-              <img src="./2-2.png" style="weight:300px; height: 300px;"><br>
-              과 같은 구조를 가지고 있다.<br>
-            </article>
-              <hr>
-            <article>
-             웹문서를 이루는 구성 요소들로는 HTML, CSS, HTML5, SGML, XML등이 있다.<br>
-             APM는 Apache, php, MySql을 의미한다.<br>
-            </article>
-            <hr>
-            <img src="./2-3.png" style="weight:300px; height: 300px;"><br>
-            <img src="./2-4.png" style="weight:300px; height: 300px;"><br>
-            <img src="./2-5.png" style="weight:300px; height: 300px;"><br>
-            <img src="./2-6.png" style="weight:300px; height: 300px;"><br>
-            <img src="./2-7.png" style="weight:300px; height: 300px;"><br>
-            <img src="./2-8.png" style="weight:300px; height: 300px;"><br>
-            <img src="./2-9.png" style="weight:300px; height: 300px;"><br>
-            <img src="./2-10.png" style="weight:300px; height: 300px;"><br>
-            <img src="./2-11.png" style="weight:300px; height: 300px;"><br>
-
+          <div id="article" style="height:700px;">
+            <script>PDFObject.embed("./chapter5.pdf", "#article");</script>
           </div>
         </div>
       </div>
